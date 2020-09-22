@@ -9,6 +9,22 @@ public class User {
         this.name = name;
     }
 
+    public static User createUser(String name) {
+        return new User(-1, name);
+    }
+
+    public User withId(int id) {
+        return new User(id, this.name);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
         return "User{" +
