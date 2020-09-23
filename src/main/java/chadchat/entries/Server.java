@@ -13,7 +13,7 @@ public class Server {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         UserRepository d = new Database();
-        User before = User.createUser("Big Gray");
+        User before = User.createUser("Tobias");
         User after = d.createUser(before);
         System.out.println("before: " + before + " after: " + after);
         System.out.println(d.findAllUsers());
