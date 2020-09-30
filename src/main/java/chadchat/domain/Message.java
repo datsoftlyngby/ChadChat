@@ -1,4 +1,4 @@
-package chadchat.domain.Message;
+package chadchat.domain;
 
 public class Message {
     private final String message;
